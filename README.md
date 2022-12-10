@@ -12,7 +12,7 @@ add your API Key here
 $base_api = 'https://manor6-dev.mirakl.net';
 $api_key = '';//api key
 ```
-
+Please export the file to your Theme/Child Theme.
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
