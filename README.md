@@ -9,7 +9,7 @@ Go to your User Settings > API Key > Generate a new key.
 Open apis.php
 add your API Key here
 ```bash
-$base_api = 'https://manor6-dev.mirakl.net';
+$base_api = 'https://xxx.mirakl.net';
 $api_key = '';//api key
 ```
 Please export the file to your Theme/Child Theme.
