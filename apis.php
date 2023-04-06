@@ -186,7 +186,7 @@ function get_product_by_meta_sku($sku){
 
 
 	function update_order_tracking_number($order_id, $traking_number){
-		$base_api = 'https://manor6-dev.mirakl.net';
+		$base_api = 'https://xxx.mirakl.net';
 		$api_key = '';//api key
 
 		$body = [
@@ -209,7 +209,7 @@ function get_product_by_meta_sku($sku){
 	}
 
 	function validate_shippment_of_order($order_id){
-		$base_api = 'https://manor6-dev.mirakl.net';
+		$base_api = 'https://xxx.mirakl.net';
 		$api_key = '';//api key
 
 		$body = [
