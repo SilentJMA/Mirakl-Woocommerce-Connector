@@ -9,7 +9,7 @@
 
 function get_orders_from_api(){
 
-    $base_api = 'https://manor6-dev.mirakl.net';
+    $base_api = 'https://xxx.mirakl.net';
     $api_key = '';//api key
 
 	$timestamp = new DateTime();
