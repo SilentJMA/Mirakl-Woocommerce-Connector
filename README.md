@@ -1,12 +1,12 @@
 # Mirakl WooCommerce Connector Plugin
 
-**Plugin Name:** Mirakl WooCommerce Connector
-**Description:** Connect Mirakl with WooCommerce.
-**Version:** 1.5.2
-**Author:** Mohamed Ayoub Jabane & Abdellatif Bouziane
-**Tested up to:** 8.4
-**WC requires at least:** 3.0
-**WC tested up to:** 8.4
+**Plugin Name:** Mirakl WooCommerce Connector<br>
+**Description:** Connect Mirakl with WooCommerce.<br>
+**Version:** 1.0.0<br>
+**Author:** Mohamed Ayoub Jabane & Abdellatif Bouziane<br>
+**Tested up to:** 8.4<br>
+**WC requires at least:** 3.0<br>
+**WC tested up to:** 8.4<br>
 **Requires at least:** 5.6
 
 ---
