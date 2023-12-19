@@ -11,6 +11,18 @@
 
 ---
 
+## How To Use
+
+Download the plugin zip file and upload it to your Woocommerce shop.
+Activate it and navigate to> API Credentials
+Insert your `mirakl API url` ` 'https://xxx-prod.mirakl.net'`
+Insert your `API Key` `'xxxxx'`
+and you are ready to use.
+
+FYI: Regarding the `tracking code confirmations` being sent to Mirakl, unfortunately, aren't set but we can customize it for `DHL` in the `next release`.
+
+---
+
 ## Activation Hook
 
 When activated, this plugin creates two database tables: `mirakl_settings` and `mirakl_sku_mappings` for configuration settings and SKU mappings.
