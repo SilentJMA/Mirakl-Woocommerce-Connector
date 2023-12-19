@@ -121,8 +121,7 @@ function mirakl_integration_settings_page() {
         </div>
     </div>
     <?php
-}
-function mirakl_connector_sku_mapping_page() {
+}function mirakl_connector_sku_mapping_page() {
     global $wpdb;
 
     // Function to get WooCommerce SKUs
@@ -147,33 +146,39 @@ function mirakl_connector_sku_mapping_page() {
         return $skus;
     }
 
-    // Function to display SKU mappings
-    function mirakl_connector_display_sku_mappings() {
-        global $wpdb;
-        $table_name = $wpdb->prefix . 'mirakl_sku_mappings';
+// Function to display SKU mappings
+function mirakl_connector_display_sku_mappings() {
+    global $wpdb;
+    $table_name = $wpdb->prefix . 'mirakl_sku_mappings';
 
-        $results = $wpdb->get_results("SELECT woocommerce_sku, external_sku, id FROM $table_name");
-
-        if (!empty($results)) {
-            echo '<table class="widefat">';
-            echo '<thead><tr><th>WooCommerce SKU</th><th>External SKU</th><th>Edit</th></tr></thead>';
-            echo '<tbody>';
-
-            foreach ($results as $row) {
-                echo '<tr>';
-                echo '<td>' . esc_html($row->woocommerce_sku) . '</td>';
-                echo '<td>' . esc_html($row->external_sku) . '</td>';
-                echo '<td><a href="?page=sku-mapping&edit=' . absint($row->id) . '">Edit</a></td>';
-                echo '</tr>';
-            }
-
-            echo '</tbody>';
-            echo '</table>';
-        } else {
-            echo esc_html('No SKU mappings found.');
-        }
+    // Check if delete action is triggered
+    if (isset($_GET['delete'])) {
+        $delete_id = intval($_GET['delete']);
+        $wpdb->delete($table_name, array('id' => $delete_id), array('%d'));
     }
 
+    $results = $wpdb->get_results("SELECT woocommerce_sku, external_sku, id FROM $table_name");
+
+    if (!empty($results)) {
+        echo '<table class="widefat">';
+        echo '<thead><tr><th>WooCommerce SKU</th><th>External SKU</th><th>Edit</th><th>Delete</th></tr></thead>';
+        echo '<tbody>';
+
+        foreach ($results as $row) {
+            echo '<tr>';
+            echo '<td>' . esc_html($row->woocommerce_sku) . '</td>';
+            echo '<td>' . esc_html($row->external_sku) . '</td>';
+            echo '<td><a href="?page=sku-mapping&edit=' . absint($row->id) . '">Edit</a></td>';
+            echo '<td><a href="?page=sku-mapping&delete=' . absint($row->id) . '" onclick="return confirm(\'Are you sure you want to delete this mapping?\')">Delete</a></td>';
+            echo '</tr>';
+        }
+
+        echo '</tbody>';
+        echo '</table>';
+    } else {
+        echo esc_html('No SKU mappings found.');
+    }
+}
     ?>
     <div class="mirakl-settings-wrapper">
         <div class="wrap">
@@ -239,7 +244,7 @@ function mirakl_connector_sku_mapping_page() {
                             $woocommerce_sku = sanitize_text_field($_POST['woocommerce_sku']);
 
                             // Validate and save the mapping (you can add this logic)
-                            save_sku_mapping($external_sku, $woocommerce_sku);
+                            mirakl_connector_save_sku_mapping($external_sku, $woocommerce_sku);
                         }
                         ?>
                         <table class="form-table">
@@ -291,8 +296,6 @@ function mirakl_connector_sku_mapping_page() {
     </style>
     <?php
 }
-
-
 function mirakl_connector_stock_management_page() {
 
     ?>
