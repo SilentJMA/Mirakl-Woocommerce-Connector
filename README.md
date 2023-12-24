@@ -2,6 +2,7 @@
 
 <a href="https://www.buymeacoffee.com/mjabane" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
+Check my Blog posts about the upcoming updates: <a href="https://ospeks.com/mirakl-woocommerce-connector-plugin/"> Mirakl Woocommerce Connector Plugin</a>
 
 **Plugin Name:** Mirakl WooCommerce Connector<br>
 **Description:** Connect Mirakl with WooCommerce.<br>
