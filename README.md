@@ -13,6 +13,8 @@
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-GPLv3-2ea44f" /></a>
 </p>
 
+> **🔒 Private Plugin** — This is a proprietary WooCommerce extension. To request access, please fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeLrpUuZq8bg5cUAco6WeLdUfQ1tgd2oUWiTeStiqRyAlPxEA/viewform?usp=publish-editor).
+
 ---
 
 ## Overview
