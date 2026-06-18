@@ -14,6 +14,8 @@
 </p>
 
 > **🔒 Private Plugin** — This is a proprietary WooCommerce extension. To request access, please fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeLrpUuZq8bg5cUAco6WeLdUfQ1tgd2oUWiTeStiqRyAlPxEA/viewform?usp=publish-editor).
+>
+> 📖 **Full documentation available on the [project Wiki](https://github.com/SilentJMA/Mirakl-Woocommerce-Connector/wiki).**
 
 ---
 
